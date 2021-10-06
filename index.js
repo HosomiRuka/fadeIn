@@ -13,3 +13,5 @@ window.onscroll = function (event) {
 
   // sections.style.background = "tomato";
 };
+
+//if文を勉強する必要がある
