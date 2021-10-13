@@ -10,10 +10,6 @@ body {
   font-family: "Kosugi Maru", sans-serif;
 }
 
-h2 {
-  margin-bottom: 30px;
-}
-
 .main__View {
   display: flex;
   justify-content: center;
@@ -47,20 +43,11 @@ h2 {
   background: #a5a5a5;
 }
 
-.main__content__section__item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px;
-}
-
-.box {
-  font-size: 30px;
-  width: 30%;
-  height: 400px;
-  background: rgb(87, 87, 87);
-}
-
-.box h2 {
-  margin-top: 25%;
+.fadein {
+  /* 透明度:0; */
+  opacity: 0;
+  /* 変形:移動(座標x, 座標y); */
+  transform: translate(0, 45px);
+  /* 動作速度:対象 動作時間; */
+  transition: all 300ms;
 }
