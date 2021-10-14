@@ -18,7 +18,7 @@ function animation() {
   // 動作確認テスト用
   // console.log(sections + "です");
   // console.log(topheight + "です");
-  console.log(scrollTop + "です");
+  // console.log(scrollTop + "です");
   // console.log(target + "です");
   // console.log(windowHeight + "です");
   // console.log(point + "です");
@@ -26,7 +26,7 @@ function animation() {
   // フェードインアニメーション
   // 条件
   if (scrollTop + 200 > target - windowHeight) {
-    console.log(target - windowHeight);
+    // console.log(target - windowHeight);
     // 透過変更
     sections.style.opacity = "1";
     // 座標変更
@@ -64,7 +64,8 @@ window.addEventListener("mousemove", function (mouse) {
 let section_02 = document.getElementById("section_02");
 //要素の寸法と位置を取得
 let size = section_02.getBoundingClientRect();
+//
 
 //動いてるか確認
 // console.log(section_02);
-// console.log(size);
+console.log(size);
