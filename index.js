@@ -68,4 +68,4 @@ let size = section_02.getBoundingClientRect();
 
 //動いてるか確認
 // console.log(section_02);
-console.log(size);
+// console.log(size);
