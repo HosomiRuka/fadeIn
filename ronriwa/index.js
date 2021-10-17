@@ -26,9 +26,29 @@ btn.onclick = function () {
   } else if (text < 5) {
     h1.innerHTML = "5以下！";
   } else {
-    h1.innerHTML = "入力内容が正しくありません";
+    h1.innerHTML = "入力内容が正しくありません、半角数字を入力してください";
   }
 };
+
+let old = 19;
+
+if (old > 20 && old < 30) {
+  console.log("対象年齢です");
+} else {
+  console.log("対象年齢ではありません");
+}
+
+if (old > 20 || old < 30) {
+  console.log("対象年齢です");
+} else {
+  console.log("対象年齢ではありません");
+}
+
+if (!(old > 20)) {
+  console.log("対象年齢です");
+} else {
+  console.log("対象年齢ではありません");
+}
 console.log(textBox.value);
 console.log(btn);
 console.log(h1);
