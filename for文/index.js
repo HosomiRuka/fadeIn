@@ -13,8 +13,17 @@ let total = 0; // totalの初期値は0
 for (let i = 0; i < 10; i++) {
   total += i + 1; // 1から10の値をtotalに加算している
 }
-text.innerHTML = total;
 
-for (let i = 0; i < 10; i++) {
-  ruka += i + 1;
+let ruka = 0;
+window.setTimeout(function () {
+  console.log(ruka + 3);
+}, 3000);
+
+window.setTimeout(function () {
+  console.log(1);
+}, 3000);
+
+// for(初期値;　条件式; 式( i++ )) {}
+for (let i = 0; i < 5; i++) {
+  console.log(i);
 }
