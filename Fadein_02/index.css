@@ -65,3 +65,35 @@ strong {
   );
   /* opacity: 0; */
 }
+
+.flex__shape {
+  position: relative;
+}
+
+.fadein__box--shape {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 49% 51% 70% 30% / 30% 59% 41% 70%;
+  background: rgb(64, 255, 155);
+  background: linear-gradient(
+    45deg,
+    rgba(64, 255, 155, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  opacity: 0.2;
+  animation: 4s Shape ease 0s infinite alternate none;
+}
+
+.shape1 {
+  transform: translateX(50px) translateY(-35px);
+}
+
+@keyframes Shape {
+  0% {
+    border-radius: 38% 62% 55% 45% / 52% 55% 45% 48%;
+  }
+  100% {
+    border-radius: 60% 40% 70% 30% / 36% 69% 31% 64%;
+  }
+}
