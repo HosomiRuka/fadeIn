@@ -13,11 +13,13 @@ body {
   align-items: center;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(
-    45deg,
-    rgb(64, 255, 155) 5%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  border: 1px tomato solid;
+}
+
+#fv img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 #text {
