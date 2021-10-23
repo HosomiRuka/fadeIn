@@ -7,40 +7,41 @@ body {
   color: #fff;
 }
 
-#fv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.warp {
   width: 100%;
   height: 100vh;
-  border: 1px tomato solid;
+}
+
+#fv {
+  /* position: relative; */
+}
+
+h1 {
+  position: absolute;
+  bottom: 0;
+  z-index: 100;
 }
 
 #fv img {
+  position: absolute;
   width: 100%;
-  height: auto;
+  height: 100vh;
   object-fit: cover;
-}
-
-#text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: rgb(255, 147, 108); */
+  opacity: 0;
+  transition: 1s;
 }
 
 #text p {
-  display: block;
   text-align: center;
-  width: 1000px;
-  margin: 120px 30px;
+  width: 80%;
+  margin: 240px auto;
   line-height: 50px;
   letter-spacing: 2px;
   color: #333;
 }
 
 strong {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 .boxs {
@@ -48,24 +49,20 @@ strong {
   justify-content: space-between;
   align-items: center;
   margin: 0 30px;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 100px;
 }
 
 .fadein__box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 120px;
+  text-align: center;
+  line-height: 500px;
   width: 30%;
   height: 500px;
-  background: rgb(64, 255, 155);
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 100px;
   background: linear-gradient(
     45deg,
     rgba(64, 255, 155, 1) 0%,
     rgba(0, 212, 255, 1) 100%
   );
-  /* opacity: 0; */
 }
 
 .flex__shape {
@@ -74,8 +71,8 @@ strong {
 
 .fadein__box--shape {
   position: absolute;
-  width: 500px;
-  height: 500px;
+  width: 100px;
+  height: 100px;
   border-radius: 49% 51% 70% 30% / 30% 59% 41% 70%;
   background: rgb(64, 255, 155);
   background: linear-gradient(
@@ -83,8 +80,8 @@ strong {
     rgba(64, 255, 155, 1) 0%,
     rgba(0, 212, 255, 1) 100%
   );
-  opacity: 0.2;
-  animation: 4s Shape ease 0s infinite alternate none;
+  opacity: 0.6;
+  animation: 1s Shape ease 0s infinite alternate none;
 }
 
 .shape1 {
