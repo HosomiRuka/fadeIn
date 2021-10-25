@@ -40,17 +40,40 @@ let fadeIn = () => {
   //条件
   if (scrollTop > textArea - windowHeight) {
     text.style.opacity = "1";
-    boxs.style.opacity = "1";
     text.style.transform = "translateY(-20px)";
   } else {
     text.style.opacity = "0";
-    boxs.style.opacity = "0";
   }
+  console.log(scrollTop);
 };
 
+//box
+let fadeInBox = () => {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  let boxsArea = boxs.getBoundingClientRect().bottom + scrollTop;
+  let windowHeight = window.innerHeight;
+  let windowHeights = parseFloat(windowHeight);
+
+  //条件
+  if (scrollTop + 100 > boxsArea - windowHeight) {
+    box1.style.opacity = "1";
+    box2.style.opacity = "1";
+    box3.style.opacity = "1";
+    box1.style.transform = "translateY(-100px)";
+    box2.style.transform = "translateY(-100px)";
+    box3.style.transform = "translateY(-100px)";
+  } else {
+    box1.style.opacity = "0";
+    box2.style.opacity = "0";
+    box3.style.opacity = "0";
+  }
+  console.log(scrollTop);
+};
 //実行
 window.addEventListener("scroll", function () {
   fadeIn();
 });
 
-console.log(boxs.getBoundingClientRect());
+window.addEventListener("scroll", function () {
+  fadeInBox();
+});
